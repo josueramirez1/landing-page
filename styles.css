@@ -74,6 +74,10 @@ body {
   color: #e5e7eb;
 }
 
+.hero img {
+  border-radius: 5px;
+}
+
 .hero-text h1 {
   font-size: 48px;
   font-weight: 900;
