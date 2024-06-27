@@ -26,16 +26,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.hero,
+.quote,
+.info-boxes {
+  height: 600px;
+}
+
 /* Header */
 
 .header {
-  justify-content: space-around;
-  height: 80px;
-}
-
-.header {
-  display: flex;
   justify-content: space-between;
+  height: 80px;
 }
 
 .header-logo-text {
@@ -65,9 +67,7 @@ body {
 
 .hero {
   font-size: 48px;
-
   color: #f9faf8;
-  height: 800px;
 }
 
 .hero-text {
@@ -186,18 +186,9 @@ body {
   font-weight: 400;
 }
 
-/* Combination */
-
 .header-link,
 .hero-secondary {
   font-size: 18px;
   color: #e5e7eb;
   text-decoration: none;
-}
-
-/* inside the main */
-.hero,
-.info-boxes,
-.quote {
-  height: 500px;
 }
