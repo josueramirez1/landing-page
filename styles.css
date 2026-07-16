@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -17,14 +19,6 @@
   }
 }
 
-body {
-  /* 4. Increase line-height */
-  line-height: 1.5;
-  /* 5. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
-}
-
-/* 6. Improve media defaults */
 img,
 picture,
 video,
@@ -53,27 +47,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* 9. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
-
-/*
-  10. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
-}
-
 .header,
 .hero,
 .footer {
@@ -86,7 +59,7 @@ h6 {
 }
 
 body {
-  font-family: Helvetica;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   height: 100vh;
 }
@@ -107,7 +80,7 @@ body {
 
   .header__link {
     list-style: none;
-    color: grey;
+    color: #e5e7eb;
   }
 }
 
@@ -121,6 +94,54 @@ main {
 
   .hero__wrapper {
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .hero__description {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero__description-text {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: bold;
+  }
+  .hero__secondary-text {
+    font-size: 18px;
+    color: #e5e7eb;
+  }
+
+  .hero__img {
+    flex: 1;
+
+    width: 500px;
+    height: 250px;
+    background-color: grey;
+
+    align-content: center;
+    text-align: center;
+  }
+
+  .hero__img-text {
+    color: #f9faf8;
+    font-size: 24px;
+  }
+
+  .hero__button {
+    align-self: flex-start;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 32px;
   }
 }
 
@@ -143,13 +164,14 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 36px;
+    gap: 48px;
   }
 
   .features__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 12px;
 
     width: 150px;
   }
@@ -186,5 +208,56 @@ main {
   .testimonial__author {
     justify-self: flex-end;
     font-weight: 800;
+  }
+}
+
+.cta {
+  flex: 1 1 400px;
+  height: 100%;
+  .cta__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+  }
+
+  .cta__container {
+    width: 1000px;
+    height: 200px;
+    padding: 20px 50px;
+    background-color: #3882f6;
+    border-radius: 11px;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .cta__description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cta__button {
+    align-self: center;
+    background: transparent;
+    border: 2px solid #f9faf8;
+    color: inherit;
+    border-radius: 8px;
+    padding: 4px 32px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer__wrapper p {
+    text-align: center;
   }
 }

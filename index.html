@@ -20,14 +20,17 @@
     <main>
       <section class="hero">
         <div class="wrapper hero__wrapper">
-          <h1>This website is awesome</h1>
-          <p>
-            This website has some subtext that goes here under teh main title.
-            It's a smaller font and the color is lower contrast
-          </p>
-          <button>Sign up</button>
-          <div class="img-placeholder">
-            <p>this is a placeholder for an image</p>
+          <div class="hero__description">
+            <h1 class="hero__description-text">This website is awesome</h1>
+            <p class="hero__secondary-text">
+              This website has some subtext that goes here under teh main title.
+              It's a smaller font and the color is lower contrast
+            </p>
+            <button class="hero__button">Sign up</button>
+          </div>
+
+          <div class="hero__img">
+            <p class="hero__logo-text">this is a placeholder for an image</p>
           </div>
         </div>
       </section>
@@ -69,15 +72,25 @@
         </div>
       </section>
       <section class="cta">
-        <div class="cta-container">
-          <h4>Call to action! It's time!</h4>
-          <p>
-            Sign up for our product by clicking that button right over there!
-          </p>
-          <button>Sign up</button>
+        <div class="cta__wrapper wrapper">
+          <div class="cta__container">
+            <div class="cta__description">
+              <h4>Call to action! It's time!</h4>
+              <p>
+                Sign up for our product by clicking that button right over
+                there!
+              </p>
+            </div>
+
+            <button class="cta__button">Sign up</button>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <p>Copyright@ The Odin Project</p>
+      </div>
+    </footer>
   </body>
 </html>
